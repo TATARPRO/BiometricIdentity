@@ -11,8 +11,8 @@ for errors relating to **cannot find MSVCRTD** use the [Permanent Fix][2] from R
 
 Most likely, one would want to incorporate this application with `Asp.NetCore`, in order to do that, modify the [ApplicationDbContext](../BiometricIdentity.Infrastructure/Data/ApplicationDbContext.cs) to inherit from `IdentityDbContext`, Inherit the [User](../BiometricIdentity.Models/Models/User.cs) from `IdentityUser` of `Microsoft.AspNetCore.Identity` for the application to have a reference of the underlying model and any necessary model needed to be referenced in the DbContext
 
-![alt user-registration](../Lib/user-register.PNG)
-![alt fingerprints-enrollment](../Lib/enrollment.PNG)
+![alt user-registration](../Lib/user-register.PNG "User registration")
+![alt fingerprints-enrollment](../Lib/enrollment.PNG "Fingerprint enrollment")
 
 [1]:https://stackoverflow.com/questions/6228112/link-fatal-error-lnk1104-cannot-open-file-msvcrtd-lib/10234077
 [2]:https://stackoverflow.com/questions/58946328/microsoft-visual-studio-community-2019-fatal-error-c1083-cannot-open-include-f
